@@ -1,0 +1,47 @@
+{
+    "name": "wn-tail-pine",
+    "version": "1.0.0",
+    "description": "Theme boilerplate for WinterCMS with Laravel Mix, TailwindCSS & Alpine.js 3",
+    "main": "index.js",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/inerba/wn-tail-pine"
+    },
+    "keywords": [
+        "TailwindCSS",
+        "Alpine.js",
+        "Laravel Mix",
+        "WinterCMS",
+        "Boilerplate",
+        "Tool",
+        "Webpack"
+    ],
+    "scripts": {
+        "development": "mix",
+        "dev": "mix watch",
+        "build": "mix --production",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.2.6",
+        "browser-sync": "^2.27.3",
+        "browser-sync-webpack-plugin": "^2.3.0",
+        "cross-env": "^7.0.3",
+        "dotenv": "^10.0.0",
+        "laravel-mix": "^6.0.25",
+        "postcss": "^8.3.5",
+        "sass": "^1.35.1",
+        "sass-loader": "^12.1.0",
+        "tailwindcss": "^2.2.4",
+        "vue-template-compiler": "^2.6.14",
+        "alpinejs": "^3.2.1",
+        "jquery": "^3.6.0",
+        "@tailwindcss/aspect-ratio": "^0.2.1",
+        "@tailwindcss/forms": "^0.3.3",
+        "@tailwindcss/typography": "^0.4.1"
+    }
+}
