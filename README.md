@@ -1,6 +1,6 @@
 # WinterCMS, TailwindCSS & Alpine.js easy theme starter
 
-Theme boilerplate for WinterCMS with Laravel Mix, TailwindCSS & Alpine.js 3
+Theme starter for WinterCMS with Laravel Mix, TailwindCSS & Alpine.js 3.
 
 includes:
 
@@ -12,7 +12,7 @@ includes:
 
 # Installation
 
-Make sure you have the .env file ready with APP_URL compiled correctly, otherwise
+Make sure you have the .env file ready with APP_URL compiled correctly, otherwise:
 
 `php artisan winter:env` and fill APP_URL
 
