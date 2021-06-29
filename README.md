@@ -12,25 +12,31 @@ includes:
 
 # Installation
 
-0: Preparation
-    Make sure you have the .env file ready with APP_URL compiled correctly, otherwise
-    `php artisan winter:env` and fill APP_URL
-1: Clone repo and switch to new theme
-    ```
-    cd your_project_folder 
-    git clone https://github.com/inerba/wn-tail-pine.git themes/wn-tail-pine 
-    php artisan theme:use wn-tail-pine
-    ```
+Make sure you have the .env file ready with APP_URL compiled correctly, otherwise
 
-2: Install packages
-    `cd themes/wn-tail-pine`
-    `yarn` or `npm install`
+`php artisan winter:env` and fill APP_URL
 
-3: Start server
-    `yarn dev` or `npm run dev`
+Clone repo and switch to new theme
 
-4: Build for production
-    `yarn build` or `npm run build`
+```bash
+cd your_project_folder 
+git clone https://github.com/inerba/wn-tail-pine.git themes/wn-tail-pine 
+php artisan theme:use wn-tail-pine
+```
+
+Install packages
+
+`cd themes/wn-tail-pine`
+
+`yarn` or `npm install`
+
+Start server
+
+`yarn dev` or `npm run dev`
+
+Build for production
+
+`yarn build` or `npm run build`
     
 # License
 
