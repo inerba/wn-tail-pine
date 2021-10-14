@@ -3,9 +3,16 @@ const glob = require("glob"),
     plugin = require("tailwindcss/plugin");
 
 module.exports = {
+    mode: process.env.NODE_ENV === 'production' ? undefined : 'jit',
     purge: {
         enabled: process.env.NODE_ENV == "production",
         content: glob.sync(path.join(__dirname, "**/*.htm")),
+
+        // if you have a plugin using tailwind template
+        // content: [
+        //     ...glob.sync(path.join(__dirname, "**/*.htm")), 
+        //     ...glob.sync(path.join(__dirname, "../../plugins/username/coolplugin/components/**/*.htm")),
+        // ],
     },
     darkMode: false, // or 'media' or 'class'
     theme: {
