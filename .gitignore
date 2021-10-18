@@ -1,2 +1,7 @@
 node_modules
 yarn.lock
+
+assets/css/styles.css
+assets/js/scripts.js
+assets/js/scripts.js.LICENSE.txt
+

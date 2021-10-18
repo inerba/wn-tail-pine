@@ -2,7 +2,9 @@ title = "Page not found (404)"
 url = "/404"
 layout = "default"
 ==
-<div class="content">
-    <h1>Page not found</h1>
-    <p>We're sorry, but the page you requested cannot be found.</p>
-</div>
+<section class="px-4 py-12 text-center">
+    <img class="mx-auto max-w-auto md:max-w-sm" src="{{ 'assets/images/error.svg' | theme }}" alt="ERROR 404">
+    <h2 class="mt-8 mb-2 text-5xl font-semibold font-heading">Page not found</h2>
+    <p class="mb-6 text-xl">Error 404</p>
+    <a class="inline-block px-8 py-4 font-semibold leading-none text-white bg-indigo-600 rounded shadow hover:bg-indigo-700" href="{{ 'home' | page }}">Return to the homepage</a>
+</section>
