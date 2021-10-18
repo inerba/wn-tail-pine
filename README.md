@@ -20,7 +20,7 @@ Clone repo and switch to new theme
 
 ```bash
 cd your_project_folder 
-git clone https://github.com/inerba/wn-tail-pine.git themes/wn-tail-pine 
+git clone git@github.com:inerba/wn-tail-pine.git themes/wn-tail-pine 
 php artisan theme:use wn-tail-pine
 ```
 
