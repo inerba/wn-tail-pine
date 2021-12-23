@@ -1,13 +1,12 @@
 # WinterCMS, TailwindCSS & Alpine.js easy theme starter
 
-Theme starter for WinterCMS with Laravel Mix, TailwindCSS & Alpine.js 3.
+Theme starter for WinterCMS with Laravel Mix, TailwindCSS 3 & Alpine.js 3.
 
 includes:
 
 - Webpack (using Laravel Mix)
-- TailwindCSS
+- TailwindCSS 3
 - Alpine.js 3
-- jQuery (required by WinterCMS)
 - postCss
 
 # Installation

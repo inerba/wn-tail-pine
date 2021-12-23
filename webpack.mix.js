@@ -29,6 +29,6 @@ mix.setPublicPath("/")
 mix.browserSync({
     proxy: process.env.APP_URL, // Local server
     notify: false,
-    open: true,
+    open: false,
     files: ["**/*.htm", "assets/css/styles.css", "assets/js/scripts.js"],
 });

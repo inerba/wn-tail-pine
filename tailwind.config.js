@@ -1,33 +1,26 @@
 const glob = require("glob"),
-    path = require("path"),
-    plugin = require("tailwindcss/plugin");
+      path = require("path"),
+      plugin = require("tailwindcss/plugin");
 
 module.exports = {
-    mode: process.env.NODE_ENV === 'production' ? undefined : 'jit',
-    purge: {
-        enabled: process.env.NODE_ENV == "production",
-        content: glob.sync(path.join(__dirname, "**/*.htm")),
+    // content: glob.sync(path.join(__dirname, "**/*.htm")),
+    content: [
+        ...glob.sync(path.join(__dirname, "**/*.htm")), 
+        ...glob.sync(path.join(__dirname, "../../plugins/inerba/tailwindtestplugin/components/**/*.htm")),
+    ],
 
-        // if you have a plugin using tailwind template
-        // content: [
-        //     ...glob.sync(path.join(__dirname, "**/*.htm")), 
-        //     ...glob.sync(path.join(__dirname, "../../plugins/username/coolplugin/components/**/*.htm")),
-        // ],
-    },
-    darkMode: false, // or 'media' or 'class'
-    theme: {
-        extend: {
-          fontFamily: {
-            'press-start': ['"Press Start 2P"', 'cursive']
-          }
-        },
-    },
-    variants: {
-        extend: {},
-    },
+    // if you have a plugin using tailwind template
+    // content: [
+    //     ...glob.sync(path.join(__dirname, "**/*.htm")), 
+    //     ...glob.sync(path.join(__dirname, "../../plugins/username/coolplugin/components/**/*.htm")),
+    // ],
+
+    media: false, // ex darkMode
+
     plugins: [
-        require("@tailwindcss/typography"),
+        require("@tailwindcss/typography"), // Use class 'max-w-none' to override the embedded 'max-width' ex: 'prose max-w-none'
         require("@tailwindcss/aspect-ratio"),
+        require("@tailwindcss/line-clamp"),
         require("@tailwindcss/forms")({
             strategy: "class",
         }),
