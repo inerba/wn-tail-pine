@@ -3,11 +3,7 @@ const glob = require("glob"),
       plugin = require("tailwindcss/plugin");
 
 module.exports = {
-    // content: glob.sync(path.join(__dirname, "**/*.htm")),
-    content: [
-        ...glob.sync(path.join(__dirname, "**/*.htm")), 
-        ...glob.sync(path.join(__dirname, "../../plugins/inerba/tailwindtestplugin/components/**/*.htm")),
-    ],
+    content: glob.sync(path.join(__dirname, "**/*.htm")),
 
     // if you have a plugin using tailwind template
     // content: [
